@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.5rem;
+}
+
+body {
+  @apply bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.glass-effect {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+.school-header {
+  @apply bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white;
+}
+
+.form-section {
+  @apply bg-white/90 backdrop-blur-sm rounded-lg border border-gray-200/50 shadow-lg p-6;
+}
+
+.table-header {
+  @apply bg-gradient-to-r from-gray-50 to-gray-100 border-b-2 border-gray-200;
+}
+
+.grade-input {
+  @apply w-16 text-center border border-gray-300 rounded px-2 py-1 focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+@media print {
+  .print-section {
+    box-shadow: none;
+    border: none;
+  }
+}
